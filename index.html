@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merge Run</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Merge Run</h1>
+        <p>Use ← → or A/D to switch lanes. Merge matching blocks to level up.</p>
+      </header>
+
+      <section class="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Level: <span id="level">1</span></div>
+        <button id="restart">Restart</button>
+      </section>
+
+      <canvas id="game" width="420" height="720" aria-label="Merge Run game canvas"></canvas>
+      <p id="message" role="status" aria-live="polite"></p>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
